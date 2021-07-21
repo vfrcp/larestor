@@ -1,0 +1,90 @@
+.slider{
+    padding-top: 50px;
+    margin-bottom: 30px;
+    .sliderSelf{
+        position: relative;
+        max-width: 1000px;
+        height: 268px;
+        margin: 0 auto;
+        border: solid $yellow-darker 1px;
+        border-radius: 25px;
+        overflow: hidden;
+        .wraper{
+            height: 268px;
+            margin: 0 auto;
+            left: 0;
+            position: absolute;
+            display: flex;
+            transition: all 0.4s;
+            
+            .slide{
+                display: flex;
+                margin-right: 15px;
+                .text{
+                    h3{
+                        margin-left: 45px;
+                        font-family: 'Myriad Pro - It';
+                        font-size: 12px;
+                        line-height: 1.2;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        color: $yellow-lighter;
+                    }
+                    h2{
+                        text-align: center;
+                        font-family: 'Myriad Pro - It';
+                        line-height: 1.2;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        color: #2b2b2b;
+                    }
+                }
+                .subtext{
+                    text-align: center;
+                    font-family: 'Myriad Pro - It';
+                    line-height: 1.2;
+                    font-weight: 700;
+                    letter-spacing: 0.04em;
+                    color: #d4d4d4;
+                    text-align: center;
+                }
+                .btn{
+                    transform: none;
+                    margin: 5px auto;
+                }
+            }
+        }
+        button{
+            width: 75px;
+            height: 50px;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            border: solid 1px $yellow-darker;
+            background-color: $yellow-lighter;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.4;
+            transition: all 0.3s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .prev{
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+        .next{
+            position: absolute;
+            right: 0;
+            top: 50%;
+        }
+        img{
+            height: 100%;
+            border-radius: 25px;
+        }
+    }
+}

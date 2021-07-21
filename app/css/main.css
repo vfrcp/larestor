@@ -1,0 +1,890 @@
+body {
+  box-sizing: border-box; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: "MyriadProIt";
+  src: url("fonts/MyriadProBoldItalic.woff2"), format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("fonts/MyriadProRegular.woff2"), format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("fonts/MyriadProBold.woff2"), format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+.headSection {
+  background-color: #2e2e2e; }
+  .headSection .container {
+    width: 100%; }
+    .headSection .container .burgerMenu {
+      z-index: 2;
+      position: fixed;
+      width: 100%;
+      height: 150%;
+      top: -1500px;
+      transition: all 0.5s;
+      background-color: rgba(75, 75, 75, 0.616); }
+      .headSection .container .burgerMenu ul {
+        list-style: none;
+        padding: 50px 0; }
+        .headSection .container .burgerMenu ul a {
+          text-align: center;
+          display: block;
+          margin: 50px;
+          text-decoration: none;
+          font-family: 'Myriad Pro It';
+          font-size: 22px;
+          line-height: 1.2;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: white;
+          transition: all 0.4s; }
+          .headSection .container .burgerMenu ul a:hover {
+            color: #b47d00;
+            text-decoration: underline; }
+
+.head {
+  min-height: 1100px;
+  background: url(../img/head2Withborder-min.png) no-repeat center, url(../img/head3-min.png) no-repeat right, url(../img/head1-min.png) no-repeat left; }
+  .head .header {
+    min-height: 150px;
+    display: flex;
+    padding-top: 20px;
+    position: relative; }
+    .head .header ul {
+      display: flex;
+      align-self: center;
+      list-style: none;
+      margin-left: 25%; }
+      .head .header ul a {
+        text-decoration: none;
+        font-family: 'Myriad Pro It';
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: white;
+        transition: all 0.4s;
+        margin-right: 30px; }
+        .head .header ul a:hover {
+          color: #b47d00;
+          text-decoration: underline; }
+    .head .header img {
+      align-self: center;
+      width: 300px;
+      height: 100px; }
+    .head .header .burger {
+      z-index: 3;
+      width: 55px;
+      height: 55px;
+      background-color: #f1ac11;
+      border-radius: 25%;
+      position: absolute;
+      right: 15px;
+      top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .head .header .burger span {
+        background-color: black;
+        width: 40px;
+        height: 3px;
+        transition: all 0.8s; }
+        .head .header .burger span:before {
+          content: "";
+          background-color: black;
+          width: 40px;
+          height: 3px;
+          position: absolute;
+          top: 10px; }
+        .head .header .burger span:after {
+          content: "";
+          background-color: black;
+          width: 40px;
+          height: 3px;
+          position: absolute;
+          bottom: 10px; }
+    .head .header .burgerActive {
+      position: fixed; }
+      .head .header .burgerActive html, .head .header .burgerActive body {
+        overflow: hidden;
+        height: 100vh; }
+      .head .header .burgerActive span {
+        transform: rotate(45deg); }
+        .head .header .burgerActive span:before {
+          transform: rotate(90deg);
+          top: 0px; }
+        .head .header .burgerActive span:after {
+          top: 0px; }
+  .head .cards {
+    display: block; }
+    .head .cards .card {
+      background: url(../img/card-min.png) 0 0/100% 100% no-repeat;
+      font-family: 'Myriad Pro';
+      width: 240px;
+      height: 140px;
+      display: inline-block;
+      padding-top: 20px;
+      opacity: 0.5;
+      transition: all 0.4s;
+      display: block;
+      margin: 5% auto; }
+      .head .cards .card:hover {
+        opacity: 0.9; }
+      .head .cards .card .label {
+        font-size: 2em;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #2b2b2b;
+        text-align: center;
+        height: 60%; }
+      .head .cards .card .btn {
+        background-color: #f1ac11;
+        border-radius: 4px;
+        font-family: 'Myriad Pro';
+        font-size: 0.8em;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #2b2b2b;
+        width: 120px;
+        height: 23.33333px;
+        margin: 0 auto;
+        padding-top: 8px; }
+        .head .cards .card .btn:hover {
+          background-color: #b47d00; }
+      .head .cards .card span {
+        width: 100%;
+        height: 100%; }
+
+.menu {
+  margin-bottom: 50px;
+  padding-top: 80px; }
+  .menu h2 {
+    text-align: center;
+    font-family: 'Myriad Pro - It';
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #f1ac11;
+    margin-bottom: 40px; }
+  .menu .iclude:before {
+    content: url("../img/check-min.png"); }
+  .menu .menuSelf .show {
+    font-family: 'Myriad Pro - It';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    margin-bottom: 20px; }
+    .menu .menuSelf .show:hover {
+      color: #b47d00; }
+  .menu .menuSelf .showBefore {
+    margin-left: 0; }
+    .menu .menuSelf .showBefore:before {
+      content: "";
+      display: inline-block;
+      background: url("../img/checkmark.svg") center/cover no-repeat;
+      width: 20px;
+      height: 20px;
+      margin-right: 5px; }
+  .menu .menuSelf .menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 50px; }
+    .menu .menuSelf .menuItems .menuItem {
+      height: 80px;
+      display: flex; }
+      .menu .menuSelf .menuItems .menuItem .img {
+        width: 60px;
+        height: 60px; }
+      .menu .menuSelf .menuItems .menuItem .text {
+        margin-left: 20px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column; }
+        .menu .menuSelf .menuItems .menuItem .text .label {
+          font-family: 'Myriad Pro';
+          font-size: 18px;
+          line-height: 1.2;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: #2b2b2b;
+          margin-bottom: 15px; }
+          .menu .menuSelf .menuItems .menuItem .text .label span {
+            color: #f1ac11; }
+        .menu .menuSelf .menuItems .menuItem .text .alergents {
+          font-family: 'Myriad Pro - It';
+          font-size: 9px;
+          line-height: 1.2;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: #bcbcbc; }
+
+.slider {
+  padding-top: 50px;
+  margin-bottom: 30px; }
+  .slider .sliderSelf {
+    position: relative;
+    max-width: 1000px;
+    height: 268px;
+    margin: 0 auto;
+    border: solid #b47d00 1px;
+    border-radius: 25px;
+    overflow: hidden; }
+    .slider .sliderSelf .wraper {
+      height: 268px;
+      margin: 0 auto;
+      left: 0;
+      position: absolute;
+      display: flex;
+      transition: all 0.4s; }
+      .slider .sliderSelf .wraper .slide {
+        display: flex;
+        margin-right: 15px; }
+        .slider .sliderSelf .wraper .slide .text h3 {
+          margin-left: 45px;
+          font-family: 'Myriad Pro - It';
+          font-size: 12px;
+          line-height: 1.2;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: #f1ac11; }
+        .slider .sliderSelf .wraper .slide .text h2 {
+          text-align: center;
+          font-family: 'Myriad Pro - It';
+          line-height: 1.2;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: #2b2b2b; }
+        .slider .sliderSelf .wraper .slide .subtext {
+          text-align: center;
+          font-family: 'Myriad Pro - It';
+          line-height: 1.2;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          color: #d4d4d4;
+          text-align: center; }
+        .slider .sliderSelf .wraper .slide .btn {
+          transform: none;
+          margin: 5px auto; }
+    .slider .sliderSelf button {
+      width: 75px;
+      height: 50px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      border: solid 1px #b47d00;
+      background-color: #f1ac11;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.4;
+      transition: all 0.3s; }
+      .slider .sliderSelf button:hover {
+        opacity: 1; }
+    .slider .sliderSelf .prev {
+      position: absolute;
+      left: 0;
+      top: 50%; }
+    .slider .sliderSelf .next {
+      position: absolute;
+      right: 0;
+      top: 50%; }
+    .slider .sliderSelf img {
+      height: 100%;
+      border-radius: 25px; }
+
+.findUs {
+  background: url("../img/footer-min.png") 0 0/cover no-repeat;
+  min-height: 490px;
+  padding-top: 150px; }
+  .findUs .card {
+    background: url(../img/card-min.png) 0 0/100% 100% no-repeat;
+    font-family: 'Myriad Pro';
+    width: 400px;
+    height: 250px;
+    display: inline-block;
+    padding-top: 20px;
+    opacity: 0.5;
+    transition: all 0.4s;
+    padding: 0 60px;
+    margin: 0 auto;
+    display: block; }
+    .findUs .card:hover {
+      opacity: 0.9; }
+    .findUs .card .label {
+      font-size: 2em;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #2b2b2b;
+      text-align: center;
+      height: 60%; }
+    .findUs .card .btn {
+      background-color: #f1ac11;
+      border-radius: 4px;
+      font-family: 'Myriad Pro';
+      font-size: 0.8em;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-align: center;
+      color: #2b2b2b;
+      width: 200px;
+      height: 41.66667px;
+      margin: 0 auto;
+      padding-top: 8px; }
+      .findUs .card .btn:hover {
+        background-color: #b47d00; }
+    .findUs .card span {
+      width: 100%;
+      height: 100%; }
+    .findUs .card .label {
+      padding-top: 20px;
+      height: 15%; }
+    .findUs .card .logoAdress {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 13%; }
+      .findUs .card .logoAdress .logo {
+        display: flex;
+        align-items: center; }
+        .findUs .card .logoAdress .logo .logoText {
+          font-family: 'Myriad Pro';
+          font-size: 22px;
+          line-height: 1.2;
+          font-weight: 400;
+          letter-spacing: 0.05em;
+          color: #f1ac11;
+          margin-left: 15px; }
+      .findUs .card .logoAdress .adress {
+        font-family: 'Myriad Pro - It';
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: 0.05em; }
+    .findUs .card .btn {
+      display: block;
+      margin: 0 auto;
+      font-family: 'Myriad Pro - It';
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #2b2b2b;
+      padding-bottom: 5px; }
+
+.footer {
+  box-sizing: border-box;
+  min-height: 274px;
+  background: url("../img/footer2-min.png") center/cover no-repeat;
+  background-color: #2e2e2e;
+  padding-top: 50px; }
+  .footer .container {
+    display: flex; }
+  .footer .info {
+    display: flex;
+    width: 70%; }
+    .footer .info .label {
+      margin: 8px 25px;
+      font-family: 'Myriad Pro - It';
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #9c9494; }
+    .footer .info .list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 25px; }
+      .footer .info .list a {
+        text-decoration: none;
+        font-family: 'Myriad Pro It';
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #888080;
+        transition: all 0.4s;
+        opacity: 0.8; }
+        .footer .info .list a:hover {
+          color: #b47d00;
+          text-decoration: underline; }
+  .footer .singUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .footer .singUp .label {
+      font-family: 'Myriad Pro - It';
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #9c9494;
+      text-align: center;
+      margin-bottom: 15px; }
+    .footer .singUp .form {
+      margin: 0 auto;
+      display: flex; }
+      .footer .singUp .form .input {
+        border-radius: 25px;
+        border: solid 3px #f1ac11; }
+      .footer .singUp .form .btn {
+        background-color: #f1ac11;
+        border-radius: 25px;
+        font-family: 'Myriad Pro';
+        font-size: 0.8em;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #2b2b2b;
+        margin: 0 auto; }
+        .footer .singUp .form .btn:hover {
+          background-color: #b47d00; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+@media (min-width: 200px) {
+  .head .header {
+    margin-bottom: 150px; }
+    .head .header img {
+      width: 200px;
+      height: 70px; }
+    .head .header ul {
+      display: none; }
+  .menu .menuSelf {
+    margin: 0; }
+  .slider .sliderSelf {
+    width: 310px; }
+    .slider .sliderSelf .wraper .slide {
+      position: relative;
+      width: 400px;
+      justify-content: start; }
+      .slider .sliderSelf .wraper .slide .text h2 {
+        max-width: 187px;
+        font-size: 15px; }
+      .slider .sliderSelf .wraper .slide .subtext {
+        max-width: 300px;
+        font-size: 13px;
+        position: absolute;
+        left: 0; }
+      .slider .sliderSelf .wraper .slide .btn {
+        position: absolute;
+        left: 39%;
+        bottom: 10px;
+        transform: translateX(-50%); }
+    .slider .sliderSelf .wraper img {
+      height: 36%; }
+  .findUs .card {
+    width: 200px; }
+    .findUs .card .logoAdress .logo {
+      padding-top: 20px; }
+    .findUs .card .logoAdress .adress {
+      display: none; }
+  .footer .container {
+    flex-wrap: wrap; }
+  .footer .info .label {
+    margin: 5px; }
+  .footer .info .list {
+    margin: 5px; } }
+
+@media (min-width: 1100px) {
+  .head .header {
+    margin-bottom: 350px; }
+    .head .header img {
+      width: 200px;
+      height: 70px; }
+    .head .header ul {
+      display: flex;
+      margin-left: 16%; }
+    .head .header .burger {
+      display: none; }
+  .head .cards {
+    display: flex;
+    justify-content: space-between; }
+    .head .cards .card {
+      margin: 0 20px; }
+      .head .cards .card:hover {
+        width: 30%; }
+  .menu .menuSelf {
+    margin: 10%; }
+  .slider .sliderSelf {
+    width: 1000px; }
+    .slider .sliderSelf .wraper .slide {
+      width: 1000px;
+      position: relative;
+      justify-content: start; }
+      .slider .sliderSelf .wraper .slide .text h2 {
+        max-width: 606px;
+        font-size: 22px; }
+      .slider .sliderSelf .wraper .slide .subtext {
+        max-width: 600px;
+        position: unset;
+        font-size: 19px; }
+      .slider .sliderSelf .wraper .slide .btn {
+        position: absolute;
+        left: 55%;
+        bottom: 10px; }
+    .slider .sliderSelf .wraper img {
+      height: 100%; }
+  .findUs .card {
+    width: 400px; }
+    .findUs .card .logoAdress .logo {
+      padding-top: 0px; }
+    .findUs .card .logoAdress .adress {
+      display: block; }
+  .footer .info .list {
+    margin: 0 25px; }
+  .footer .info .label {
+    margin: 0 25px; }
+  .footer .singUp .label {
+    margin: 10px 25px; } }
+
+@media (min-width: 1450px) {
+  .headSection .container .header ul {
+    margin-left: 24%; } }
+
+@media (min-width: 1970px) {
+  .headSection .container {
+    width: 1970px; }
+    .headSection .container .header ul {
+      margin-left: 30%; } }
+
+/*# sourceMappingURL=main.css.map */

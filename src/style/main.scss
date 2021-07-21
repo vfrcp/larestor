@@ -1,0 +1,14 @@
+body{
+    box-sizing: border-box;
+}
+@import "./other/normalize.scss";
+@import "other/_fonts";
+@import "other/_vars";
+@import "other/_mixins";
+@import "components/_head";
+@import "components/_menu";
+@import "components/_slider";
+@import "components/findUs";
+@import "components/_footer";
+@import "components/_burger";
+@import "./other/_media.scss";

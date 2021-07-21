@@ -1,0 +1,53 @@
+.findUs{
+    background: url("../img/footer-min.png") 0 0/cover no-repeat;
+    min-height: 490px;
+    padding-top: 150px;
+    .card{
+        @include card(400px, 250px);
+        padding: 0 60px;
+        margin: 0 auto;
+        display: block;
+
+        .label{
+            padding-top: 20px;
+            height: 15%;
+        }
+        .logoAdress{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 13%;
+            .logo{
+                display: flex;
+                align-items: center;
+                
+                .logoText{
+                    font-family: 'Myriad Pro';
+                    font-size: 22px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    letter-spacing: 0.05em;
+                    color: $yellow-lighter;
+                    margin-left: 15px;
+                }
+            }
+            .adress{
+                font-family: 'Myriad Pro - It';
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: 700;
+                letter-spacing: 0.05em;
+            }
+        }
+        .btn{   
+            display: block;
+            margin: 0 auto;
+            font-family: 'Myriad Pro - It';
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #2b2b2b;
+            padding-bottom: 5px;
+        }
+    }
+}

@@ -1,0 +1,198 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width:200px){
+    .head{
+        .header{
+            margin-bottom: 150px;
+            img{
+                width: 200px;
+                height: 70px;
+            }
+            ul{
+                display: none;
+            }
+        }
+    }
+    .menu{
+        .menuSelf{
+            margin: 0;
+        }
+    }
+    .slider{
+        .sliderSelf{
+            width: 310px;
+            .wraper{
+                .slide{
+                    position: relative;
+                    width: 400px;
+                    justify-content: start;
+                    .text{
+                        h2{
+                            max-width: 187px;
+                            font-size: 15px;
+                        }
+                    }
+                    .subtext{
+                        max-width: 300px;
+                        font-size: 13px;
+                        position: absolute;
+                        left: 0;
+                    }
+                    .btn{
+                        position: absolute;
+                        left: 39%;
+                        bottom: 10px;
+                        transform: translateX(-50%);
+                    }
+                }
+                img{
+                    height: 36%;
+                }
+            }
+        }
+    }
+    .findUs{
+        .card{
+            width: 200px;
+            .logoAdress{
+                .logo{
+                    padding-top: 20px;
+                }
+                .adress{
+                    display: none;
+                }
+            }
+        }
+    }
+    .footer{   
+        .container{
+            flex-wrap: wrap;
+        }
+        .info{
+            .label{
+                margin: 5px;
+            }
+            .list{
+                margin: 5px;
+            }
+        }
+    }
+}
+@media (min-width: 1100px){
+    .head{
+        .header{
+            margin-bottom: 350px;
+            img{
+                width: 200px;
+                height: 70px;
+            }
+            ul{
+                display: flex;
+                margin-left: 16%;
+            }
+            .burger{
+                display: none;
+            }
+        }
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            .card{
+                margin: 0 20px;
+                &:hover{
+                    width: 30%;
+                }
+            }
+        }
+    }
+    .menu{
+        .menuSelf{
+            margin: 10%;
+        }
+    }
+    .slider{
+        .sliderSelf{
+            width: 1000px;
+            .wraper{
+                .slide{
+                    width: 1000px;
+                    position: relative;
+                    justify-content: start;
+                    .text{
+                        h2{
+                            max-width: 606px;
+                            font-size: 22px;
+                        }
+                    }
+                    .subtext{
+                        max-width: 600px;
+                        position: unset;
+                        font-size: 19px;
+                    }
+                    .btn{
+                        position: absolute;
+                        left: 55%;
+                        bottom: 10px;
+                    }
+                }
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .findUs{
+        .card{
+            width: 400px;
+            .logoAdress{
+                .logo{
+                    padding-top: 0px;
+                }
+                .adress{
+                    display: block;
+                }
+            }
+        }
+    }
+    .footer{
+        .info{
+            .list{
+                margin: 0 25px;
+            }
+            .label{
+                margin: 0 25px;
+            }
+        }
+        .singUp{
+            .label{
+                margin: 10px 25px;
+            }
+        }
+    }
+}
+@media (min-width: 1450px){
+    .headSection{
+        .container{
+            .header{
+                ul{
+                    margin-left: 24%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1970px){
+    .headSection{
+        .container{
+            width: 1970px;
+            .header{
+                ul{
+                    margin-left: 30%;
+                }
+            }
+        }
+    }
+}
